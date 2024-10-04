@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let price=0;
+        while(true){
+            let a=prompt("Enter the Food Item");
+            if(a==""){
+                if(price>=500){
+                    alert(price*0.9);
+                    break;
+                }
+                else{
+                    alert(price);
+                    break;
+                }
+            }
+            switch(a){
+                case "pizza":
+                    price+=250;
+                    break;
+                case "burger":
+                    price+=300;
+                    break;
+                case "idly":
+                    price+=80;
+                    break;
+                case "juice":
+                    price+=100;
+                    break;
+                default:
+                    alert("Enter the correct options");
+            }
+        }
+    </script>
+</body>
+</html>
