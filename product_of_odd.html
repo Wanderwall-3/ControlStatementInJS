@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function productOfOdds(M, N) {
+           if (M > N) {
+              console.log("M should not be greater than N.");
+              return 1;
+            }
+
+            let product = 1;
+            let hasOdd = false;
+            for (let i = M; i <= N; i++) {
+                if (i % 2 !== 0) { 
+                    product *= i;
+                    hasOdd = true;
+                }
+            }
+                return hasOdd ? product : 1;
+        }
+        console.log(productOfOdds(3, 9));  
+        console.log(productOfOdds(10, 5)); 
+        console.log(productOfOdds(4, 8)); 
+    </script>
+</body>
